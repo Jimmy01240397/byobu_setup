@@ -1,6 +1,6 @@
 #!/bin/bash
 apt-get install byobu
-echo "if [ \"$_byobu_sourced\" == \"\" ]" > /etc/profile.d/byobu.sh
+echo "if [ \"\$_byobu_sourced\" == \"\" ]" > /etc/profile.d/byobu.sh
 echo "then" >> /etc/profile.d/byobu.sh
 echo "    _byobu_sourced=1 TMUX= . /usr/bin/byobu-launch" >> /etc/profile.d/byobu.sh
 echo "fi" >> /etc/profile.d/byobu.sh
